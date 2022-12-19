@@ -1,0 +1,28 @@
+server:
+  port: 8188
+
+spring:
+  application:
+    name: space-gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        acl-token: 10bb4aaf-d307-0290-f164-a3363d08a9c2
+        register: true
+        instance-id: ${spring.application.name}-01
+        service-name: ${spring.application.name}
+        port: ${server.port}
+      config:
+        enabled: true
+        acl-token: 10bb4aaf-d307-0290-f164-a3363d08a9c2
+        defaultContext: space-gateway
+        prefixes:
+          - space
+        format: yaml
+
+        watch:
+          enabled: true
+          delay: 1000
