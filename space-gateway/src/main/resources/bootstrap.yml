@@ -14,7 +14,6 @@ spring:
         register: true
         instance-id: ${spring.application.name}-01
         service-name: ${spring.application.name}
-        port: ${server.port}
       config:
         enabled: true
         acl-token: 10bb4aaf-d307-0290-f164-a3363d08a9c2
@@ -22,7 +21,6 @@ spring:
         prefixes:
           - space
         format: yaml
-
         watch:
           enabled: true
           delay: 1000
