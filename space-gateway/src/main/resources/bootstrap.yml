@@ -1,26 +1,40 @@
-server:
-  port: 8188
-
 spring:
   application:
     name: space-gateway
+  main:
+    allow-bean-definition-overriding: true
   cloud:
     consul:
-      host: localhost
-      port: 8500
+      host: ${consul_host:localhost}
+      port: ${consul_port:8500}
+      enabled: true
       discovery:
-        enabled: true
-        acl-token: 10bb4aaf-d307-0290-f164-a3363d08a9c2
-        register: true
-        instance-id: ${spring.application.name}-01
+        enabled: false
         service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${spring.cloud.client.hostname}:${server.port}}}
+        # 健康检查
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 15s
+        prefer-ip-address: true
       config:
+        #默认是true
         enabled: true
-        acl-token: 10bb4aaf-d307-0290-f164-a3363d08a9c2
-        defaultContext: space-gateway
-        prefixes:
-          - space
-        format: yaml
+        #设置配置值的基本文件夹
+#        prefixes:
+#          - space
+        #设置所有应用程序使用的文件夹名称
+#        defaultContext: application
+        #设置用于使用配置文件在属性源中分隔配置文件名称的分隔符的值
+#        profileSeparator: ':'
+        # 监控
         watch:
+          #实时刷新配置
           enabled: true
           delay: 1000
+        # 表示consul上面文件的格式 有四种 YAML PROPERTIES KEY-VALUE FILES
+        format: YAML
+        #表示consul上面的KEY值(或者说文件的名字) 默认是data
+#        data-key: devopsconfig
+        # acl-token
+#        acl-token: ${consul_token:687bd467-a93e-8558-1aaf-f7c4036c406b}
+
