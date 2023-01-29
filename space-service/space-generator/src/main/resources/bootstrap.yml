@@ -42,6 +42,6 @@ spring:
           enabled: true
           delay: 1000
 
-        # acl-token
+#        # acl-token
 #        acl-token: ${consul_token:687bd467-a93e-8558-1aaf-f7c4036c406b}
 

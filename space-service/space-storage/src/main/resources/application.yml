@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hello
+minio:
+  endpoint: http://localhost:9000
+  accessKey: 1
+  secretKey: 2
+  bucket: test
+swagger:
+  title: bh
+  description: 1
+  version: 2
+  contact:
+    name: 1
+    url: 2
+    email: 1
+

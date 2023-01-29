@@ -14,7 +14,7 @@
 
     <modules>
         <module>space-common</module>
-        <module>space-starter</module>
+<!--        <module>space-starter</module>-->
     </modules>
 
 </project>
