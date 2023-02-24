@@ -1,8 +1,5 @@
-//package com.levizheng.common.exception;
+//package com.levizheng.space.common.exception;
 //
-//import com.levizheng.common.result.BaseResult;
-//import org.springframework.web.bind.annotation.ExceptionHandler;
-//import org.springframework.web.bind.annotation.RestControllerAdvice;
 //
 ///**
 // * @author levi
