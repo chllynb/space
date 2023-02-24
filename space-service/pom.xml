@@ -16,6 +16,7 @@
         <module>space-gateway</module>
         <module>space-generator</module>
         <module>space-storage</module>
+        <module>space-user</module>
     </modules>
 
     <properties>

@@ -1,11 +1,20 @@
+server:
+  port: 1005
 spring:
   application:
-    name: hello
+    name: space-storage
+  # 上传文件限制
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 30MB
+      max-request-size: 30MB
+      file-size-threshold: 0
 minio:
   endpoint: http://localhost:9000
-  accessKey: 1
-  secretKey: 2
-  bucket: test
+  accessKey: tON3DJJqEPwuXblP
+  secretKey: E4Ce24UK8WXLRQAJzFBe0mC7Gq5TqjdW
+  bucket: test233
 swagger:
   title: bh
   description: 1
