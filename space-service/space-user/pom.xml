@@ -10,6 +10,12 @@
     </parent>
 
     <artifactId>space-user</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>space-user-core</module>
+        <module>space-user-runner-consul</module>
+        <module>space-user-runner-nacos</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
