@@ -1,24 +1,18 @@
-package com.levizheng.space.gateway;
-
+package com.levizheng.space.runner.consul;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author levi
+ * @since 2023/2/24
  */
 @Slf4j
 @SpringBootApplication
-@EnableDiscoveryClient
-@RestController
 public class GatewayApplication {
-
     public static void main(String[] args) {
-        log.info("网关启动中...");
+        log.info("网关服务正在启动...");
         SpringApplication.run(GatewayApplication.class, args);
     }
-
 }

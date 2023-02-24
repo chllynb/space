@@ -18,8 +18,7 @@
 package com.levizheng.space.common.util;
 
 import com.levizheng.space.common.exception.SpaceException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
@@ -31,11 +30,8 @@ import java.security.NoSuchAlgorithmException;
  *
  * @author levi
  */
+@Slf4j
 public class Md5Utils {
-    /**
-     * logger.
-     */
-    private static final Logger LOG = LoggerFactory.getLogger(Md5Utils.class);
 
     /**
      * Md 5 string.
@@ -56,7 +52,7 @@ public class Md5Utils {
         try {
             byteArray = src.getBytes(charset);
         } catch (UnsupportedEncodingException e) {
-            LOG.error(e.getMessage(), e);
+            log.error(e.getMessage(), e);
         }
         byte[] md5Bytes = md5.digest(byteArray);
         for (byte md5Byte : md5Bytes) {

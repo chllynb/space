@@ -14,7 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring-cloud.version>2021.0.5</spring-cloud.version>
-        <spring-boot.version>2.5.14</spring-boot.version>
+        <spring-boot.version>2.6.13</spring-boot.version>
+        <nacos.starter.verison>2021.0.4.0</nacos.starter.verison>
         <mybatis.starter.version>2.2.2</mybatis.starter.version>
         <mysql.version>8.0.30</mysql.version>
         <caffeine.version>2.9.3</caffeine.version>
@@ -57,6 +58,18 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${nacos.starter.verison}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${nacos.starter.verison}</version>
             </dependency>
 
             <dependency>
@@ -120,5 +133,18 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://maven.aliyun.com/repository/central</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
