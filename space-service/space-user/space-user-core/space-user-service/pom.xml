@@ -21,8 +21,19 @@
     <dependencies>
         <dependency>
             <groupId>com.levizheng</groupId>
+            <artifactId>space-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.levizheng</groupId>
             <artifactId>space-user-model</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 

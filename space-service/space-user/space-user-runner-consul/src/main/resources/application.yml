@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*"
+
+swagger:
+  title: space-user
+  description: 用户中心
+  contact:
+    name: levi
+    url: url
+    email: levi.zheng@outlook.com
+  version: 1.0

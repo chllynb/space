@@ -21,15 +21,17 @@
     <dependencies>
         <dependency>
             <groupId>com.levizheng</groupId>
-            <artifactId>space-user-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.levizheng</groupId>
             <artifactId>space-user-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- todo  swagger    -->
+        <!--        <dependency>-->
+        <!--            <groupId>com.levizheng</groupId>-->
+        <!--            <artifactId>base-spring-boot-starter</artifactId>-->
+        <!--            <version>1.0-SNAPSHOT</version>-->
+        <!--        </dependency>-->
+
     </dependencies>
 
 </project>

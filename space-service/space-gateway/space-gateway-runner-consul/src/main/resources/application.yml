@@ -5,3 +5,14 @@ management:
     web:
       exposure:
         include: "*"
+spring:
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+        - id: path_route
+          uri: https://example.org
+          predicates:
+            - Path=/red/**
+
+
