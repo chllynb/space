@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>space-gateway-core</module>
-        <module>space-gateway-runner-nacos</module>
+<!--        <module>space-gateway-runner-nacos</module>-->
         <module>space-gateway-runner-consul</module>
     </modules>
 
