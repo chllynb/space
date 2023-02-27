@@ -1,6 +1,7 @@
 package com.levizheng.space.user.core.service.impl;
 
-import com.levizheng.space.user.service.IUserService;
+
+import com.levizheng.space.user.core.service.IUserService;
 
 /**
  * @author levi

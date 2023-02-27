@@ -1,7 +1,7 @@
 package com.levizheng.space.user.core.controller;
 
-import com.levizheng.space.user.model.dto.RegisterDTO;
-import com.levizheng.space.user.service.IUserService;
+
+import com.levizheng.space.user.core.service.IUserService;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
