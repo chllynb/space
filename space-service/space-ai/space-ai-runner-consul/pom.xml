@@ -3,22 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.levizheng</groupId>
-        <artifactId>space</artifactId>
+        <artifactId>space-ai</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>space-service</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>space-gateway</module>
-        <module>space-generator</module>
-        <module>space-storage</module>
-        <module>space-user</module>
-        <module>space-ai</module>
-    </modules>
+    <groupId>groupId</groupId>
+    <artifactId>space-ai-runner-consul</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -26,4 +20,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.levizheng</groupId>
+            <artifactId>space-ai-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    
 </project>
