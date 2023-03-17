@@ -117,7 +117,7 @@ public final class DateUtils {
     }
 
     /**
-     * Format local date time to string.
+     * Format local date time to string test.
      *
      * @param localDateTime the localDateTime
      * @param pattern       formatter pattern
